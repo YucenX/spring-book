@@ -20,7 +20,7 @@ are basically functionally identical to the ones you see in the book.
 As a warning, some of these inside jokes may lean more towards the mature side of romance,
 though there is nothing inappropriate. Otherwise, I wouldn't be hosting this repo here where
 potential employers can see my work. Chances are, you probably won't understand these jokes
-in the first place however, unless you coincidentally play the same video games as me.
+in the first place, unless you coincidentally play the same video games as me.
 
 ### Prerequisites
 
