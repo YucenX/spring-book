@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-22T23:23:18 EDT" name="Surefire suite" finished-at="2024-07-22T23:23:18 EDT" duration-ms="188">
+    <groups>
+    </groups>
+    <test started-at="2024-07-22T23:23:18 EDT" name="Surefire test" finished-at="2024-07-22T23:23:18 EDT" duration-ms="188">
+      <class name="com.farms4life2016.chapter02.SpringGreeterTest">
+        <test-method signature="testHelloWorld()[pri:0, instance:com.farms4life2016.chapter02.SpringGreeterTest@7fc229ab]" started-at="2024-07-22T23:23:18 EDT" name="testHelloWorld" finished-at="2024-07-22T23:23:18 EDT" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHelloWorld -->
+      </class> <!-- com.farms4life2016.chapter02.SpringGreeterTest -->
+      <class name="com.farms4life2016.chapter02.GreeterTest">
+        <test-method signature="testHelloWorld()[pri:0, instance:com.farms4life2016.chapter02.GreeterTest@a4102b8]" started-at="2024-07-22T23:23:18 EDT" name="testHelloWorld" finished-at="2024-07-22T23:23:18 EDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHelloWorld -->
+      </class> <!-- com.farms4life2016.chapter02.GreeterTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
