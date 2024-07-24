@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- chapter04/src/test/resources/config-03.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- calling methods right after object creation and right before the application context closes -->
+    <bean name="roxanne" 
+          class="com.farms4life2016.chapter04.WolfFurry"
+          init-method="init" 
+          destroy-method="dispose"
+    />  <!-- both init and destroy's methods must be void-methods with no params.
+             also, destroy can only be used on singletons -->
+
+    <!-- calling the wolf "roxanne" is a fnaf reference lol -->
+</beans>

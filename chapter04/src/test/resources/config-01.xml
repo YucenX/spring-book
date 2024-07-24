@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- chapter04/src/test/resources/config-01.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- scope demonstration: singleton vs. prototype -->
+    <!--
+        singleton: only created and destroyed once per ApplicationContext. 
+            retrieving the object multiple times will return a 
+            reference to the same object every time.
+        
+        prototype: the context will construct a new unique object each time
+            the bean is retrieved. Spring acts like an object builder/factory
+    -->
+
+    <!-- To declare a bean as singleton/prototype, we add scope= to <bean>
+        Note that "singleton" scope is the default, so this declaration
+        is unnecessary.
+    -->
+    <bean name="single" class="com.farms4life2016.chapter04.FoxFurry" scope="singleton"/>
+    <bean name="proto" class="com.farms4life2016.chapter04.FoxFurry" scope="prototype"/>
+</beans>

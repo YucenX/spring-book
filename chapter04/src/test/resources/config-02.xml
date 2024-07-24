@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- chapter04/src/test/resources/config-02.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- simple constructor injection demo just like chapter 3 -->
+    <bean name="delphox" class="com.farms4life2016.chapter04.ConcreteFurry">
+        <constructor-arg name="animal" value="fennec fox"/>
+    </bean>
+</beans>
