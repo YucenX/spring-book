@@ -17,6 +17,7 @@
         <module>chapter05-anno</module>
         <module>chapter05-xml</module>
         <module>chapter06</module>
+        <module>chapter07</module>
     </modules>
 
     <properties>
