@@ -13,6 +13,9 @@
         <module>chapter02</module>
         <module>chapter03</module>
         <module>chapter04</module>
+        <module>chapter05-api</module>
+        <module>chapter05-anno</module>
+        <module>chapter05-xml</module>
     </modules>
 
     <properties>
