@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- "simple" HTML file to demonstrate how Spring Boot can serve static HTML pages -->
+<html>
+    <head>
+        <title>Hello, World!</title>
+        <!-- not sure how this jQuery works -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+        </script>
+        <script> 
+            // when the form is submitted, we take the string from the input textbox
+            // and send a GET request to localhost:8080/greeting/{name}
+            function submitForm() {
+                $.get('http://localhost:8080/greeting/'+ $('#helloform input[name=name]').val(),
+
+                    // with the response, we change the greeting <p> tag with whatever
+                    // localhost:8080/greeting/{name} would have said
+                    function(data) {
+                        $("#greeting").text(data.message);
+                    },
+                    'json');
+            };
+        </script>
+        <style>
+            p #greeting {
+                font-family: "Courier New", monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form id="helloform">
+                <p> <!-- creates a textbox and a submit button. when clicked, executes submitForm() function from above -->
+                    Hello, what is your name?
+                    <input type="text" name="name"/>
+                    <input type="submit" value="Submit" onclick="submitForm()"/>
+                </p>
+                <!-- this should store the answer from localhost:8080/greeting/{name}  -->
+                <p id="greeting"></p>
+            </form>
+        </div>
+        <!-- in practice, this webpage does not work as intended. the greeting only shows up for a split second before disappearing???-->
+    </body>
+</html>

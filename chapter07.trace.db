@@ -1,0 +1,6 @@
+2024-07-25 17:27:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CANDIDATES" not found (this database is empty); SQL statement:
+SELECT * FROM candidates WHERE id=? [42104-214]
+2024-07-25 19:12:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CANDIDATES" not found (this database is empty); SQL statement:
+SELECT * FROM candidates WHERE id=? [42104-214]
